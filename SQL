@@ -1,0 +1,19 @@
+WITH
+	euro AS (
+		SELECT
+			ec.country_code,
+			ec.name,
+			el.country_code AS el_country_code,
+			es.*
+		FROM
+			euro_coaches AS ec
+			INNER JOIN euro_lineups AS el ON ec.country_code = el.country_code
+			CROSS JOIN euro_summary AS es
+		WHERE
+			ec.country_code = 'FRA'
+GROUP BY ec.country_code, name, ec.country_code
+	)
+SELECT
+	attendance_avg
+FROM
+	euro;
