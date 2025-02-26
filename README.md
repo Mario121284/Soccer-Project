@@ -2,7 +2,7 @@
 
 ## Introduction
 
-1. What is the country with the highest average attendance in the European Championship, and what is the corresponding average attendance value?
+1. What is the country and coach at the time with the highest average attendance in the European Championship, and what is the corresponding average attendance value?
 
 2. What is the most common formation used by teams in the European Football Championship, and which coaches are most likely to use this formation?
 
